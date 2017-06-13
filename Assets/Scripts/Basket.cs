@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Basket : MonoBehaviour {
-	public GUIText scoreGT;
+	public Text scoreGT;
 	// Use this for initialization
 	void Start () {
 		GameObject scoreGO = GameObject.Find ("ScoreCounter");
-		scoreGT = scoreGO.GetComponent<GUIText> ();
+		scoreGT = scoreGO.GetComponent<Text> ();
 		scoreGT.text = "0";
 	}
 	
